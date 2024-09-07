@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="image/navbar-logo.png" alt="">
+          </a>
+
+          <ul class="navbar-links d-lg-flex d-none">
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>New Property</li>
+            <li>Contact</li>
+          </ul>
+
+          <button type="button" class="navbar-btn btn btn-light border" data-theme="Light">Light</button>
+
+          <button class="navbar-toggler d-lg-none d-flex bg-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="header position-relative d-flex">
+      <div class="container">
+        <div class="header-text">
+          <div class="header-top-text">
+            <h1>
+              Discover a place
+              you will love to live
+            </h1>
+            <h6>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Imperdiet tempus felis vitae sit est quisque.
+            </h6>
+          </div>
+  
+          <div class="header-end">
+            <div class="row">
+                <div class="col-md-3 col-6 mt-1 header-end-cards">
+                    <span class="header-end-icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </span>
+  
+                    <div class="header-end-text">
+                      <b>Location</b>
+                      <p>Ahmedabad, India</p>
+                    </div>
+                </div>
+  
+                <div class="col-md-3 col-6 mt-1 header-end-cards">
+                  <span class="header-end-icon">
+                    <i class="fa-solid fa-money-bill"></i>
+                  </span>
+
+                  <div class="header-end-text">
+                    <b>Price</b>
+                    <p>$1000 - $10,000</p>
+                  </div>
+                </div>
+
+                <div class="col-md-3 col-6 mt-1 header-end-cards">
+                  <span class="header-end-icon">
+                    <i class="fa-solid fa-house"></i>
+                  </span>
+
+                  <div class="header-end-text">
+                    <b>Type of Property</b>
+                    <p>Apartment</p>
+                  </div>
+                </div>
+  
+                <div class="col-md-3 col-6 mt-1">
+                    <button class="header-end-serach">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+          </div>
+
+          <div class="header-bottom-text d-flex gap-5">
+            <div class="bottom-text"> 
+              <h4>2000+</h4>
+              <p>Property Ready</p>
+            </div>
+
+            <div class="bottom-text">
+              <h4>2000+</h4>
+              <p>Property Ready</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-image position-absolute d-xxl-flex d-none">
+        <img src="image/header-bg.png" alt="">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="works-text">
+        <h1>How it Works</h1>
+        <p>
+          Using it can make you sound like you have been studying english <br>
+          for a long time. Here’s the challenge
+        </p>
+      </div>
+
+      <div class="row works justify-content-center gap-3 mt-5">
+        <div class="col-3 works-card1 d-flex flex-column justify-content-center gap-2">
+          <i class="fa-solid fa-house works-house"></i>
+          <h4>Search Apartment</h4>
+          <p class="works-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae.</p>
+        </div>
+
+        <div class="col-3 works-card2 d-flex flex-column justify-content-center gap-2">
+          <i class="fa-solid fa-house works-house"></i>
+          <h4>Search Apartment</h4>
+          <p class="works-p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae.</p>
+        </div>
+
+        <div class="col-3 works-card1 d-flex flex-column justify-content-center gap-2">
+          <i class="fa-solid fa-house works-house"></i>
+          <h4>Search Apartment</h4>
+          <p class="works-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae.</p>
+        </div>
+      </div>
+    </div>   
+    
+    <div class="container">
+      <div class="dream-home">
+        <div class="dream-home-text d-flex flex-column justify-content-center align-items-center">
+          <h2>
+            We will help you to find <br>
+            Dream Home
+          </h2>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page 
+            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+          </p>
+        </div>
+
+        <div class="dream-card">
+          <div class="row dream-row dream-cards align-items-center mt-5">
+            <div class="col-2 dream-box d-flex flex-column gap-3">
+              <p>$2000/month</p>
+              <h6>Apartment 2500 sqft</h6>
+              <div class="dream-span d-flex gap-4">
+                <span><i class="fa-solid fa-bed"></i>2</span>
+                <span><i class="fa-solid fa-bath"></i>2</span>
+                <span><i class="fa-solid fa-car"></i>1</span>
+              </div>  
+
+              <div class="dream-span">
+                <span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  1901 Thornridge Cir. Shiloh, 
+                  Hawaii 81063
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row dream-row2 dream-cards align-items-center justify-content-end mt-5">
+            <div class="col-2 dream-box d-flex flex-column gap-3">
+              <p>$2000/month</p>
+              <h6>Apartment 2500 sqft</h6>
+              <div class="dream-span d-flex gap-4">
+                <span><i class="fa-solid fa-bed"></i>2</span>
+                <span><i class="fa-solid fa-bath"></i>2</span>
+                <span><i class="fa-solid fa-car"></i>1</span>
+              </div>  
+
+              <div class="dream-span">
+                <span>
+                  <i class="fa-solid fa-location-dot"></i>
+                  1901 Thornridge Cir. Shiloh, 
+                  Hawaii 81063
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="trending">
+        <div class="trending-text text-center">
+          <h1>Our most trending properties</h1>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable <br> 
+            content of a page when looking at its layout. The point of using.
+          </p>
+        </div>
+
+        <div class="row justify-content-center gap-5 mt-5">
+          <div class="col-3 d-flex flex-column justify-content-center tranding-box1">
+            <img src="image/tranding-img1.png" alt="">
+
+            <div>
+              <div class="tranding-box-text d-flex flex-column gap-3">
+                <span class="d-flex align-items-center justify-content-between mt-3 trending-span">
+                  <a href=""><h5>$25000</h5></a>
+                  <i class="fa-solid fa-share-nodes"></i>
+                </span>
+
+                <h4>
+                  Luxury Apartment 
+                  in California
+                </h4>
+
+                <div class="dream-span d-flex gap-4">
+                  <span><i class="fa-solid fa-bed"></i>2</span>
+                  <span><i class="fa-solid fa-bath"></i>2</span>
+                  <span><i class="fa-solid fa-car"></i>1</span>
+                </div>  
+                
+                <span class="d-flex trending-span">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 d-flex flex-column justify-content-center tranding-box1">
+            <img src="image/tranding-img2.png" alt="">
+
+            <div>
+              <div class="tranding-box-text d-flex flex-column gap-3">
+                <span class="d-flex align-items-center justify-content-between mt-3 trending-span">
+                  <a href=""><h5>$175000</h5></a>
+                  <i class="fa-solid fa-share-nodes"></i>
+                </span>
+
+                <h4>
+                  Luxury Apartment 
+                  in California
+                </h4>
+
+                <div class="dream-span d-flex gap-4">
+                  <span><i class="fa-solid fa-bed"></i>2</span>
+                  <span><i class="fa-solid fa-bath"></i>2</span>
+                  <span><i class="fa-solid fa-car"></i>1</span>
+                </div>  
+                
+                <span class="d-flex trending-span">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 d-flex flex-column justify-content-center tranding-box1">
+            <img src="image/tranding-img3.png" alt="">
+
+            <div>
+              <div class="tranding-box-text d-flex flex-column gap-3">
+                <span class="d-flex align-items-center justify-content-between mt-3 trending-span">
+                  <a href=""><h5>$300000</h5></a>
+                  <i class="fa-solid fa-share-nodes"></i>
+                </span>
+
+                <h4>
+                  Luxury Apartment 
+                  in California
+                </h4>
+
+                <div class="dream-span d-flex gap-4">
+                  <span><i class="fa-solid fa-bed"></i>2</span>
+                  <span><i class="fa-solid fa-bath"></i>2</span>
+                  <span><i class="fa-solid fa-car"></i>1</span>
+                </div>  
+                
+                <span class="d-flex trending-span">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center gap-5 mt-5">
+          <div class="col-3 d-flex flex-column justify-content-center tranding-box1">
+            <img src="image/tranding-img4.png" alt="">
+
+            <div>
+              <div class="tranding-box-text d-flex flex-column gap-3">
+                <span class="d-flex align-items-center justify-content-between mt-3 trending-span">
+                  <a href=""><h5>$140000</h5></a>
+                  <i class="fa-solid fa-share-nodes"></i>
+                </span>
+
+                <h4>
+                  Luxury Apartment 
+                  in California
+                </h4>
+
+                <div class="dream-span d-flex gap-4">
+                  <span><i class="fa-solid fa-bed"></i>2</span>
+                  <span><i class="fa-solid fa-bath"></i>2</span>
+                  <span><i class="fa-solid fa-car"></i>1</span>
+                </div>  
+                
+                <span class="d-flex trending-span">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 d-flex flex-column justify-content-center tranding-box1">
+            <img src="image/tranding-img5.png" alt="">
+
+            <div>
+              <div class="tranding-box-text d-flex flex-column gap-3">
+                <span class="d-flex align-items-center justify-content-between mt-3 trending-span">
+                  <a href=""><h5>$500000</h5></a>
+                  <i class="fa-solid fa-share-nodes"></i>
+                </span>
+
+                <h4>
+                  Luxury Apartment 
+                  in California
+                </h4>
+
+                <div class="dream-span d-flex gap-4">
+                  <span><i class="fa-solid fa-bed"></i>2</span>
+                  <span><i class="fa-solid fa-bath"></i>2</span>
+                  <span><i class="fa-solid fa-car"></i>1</span>
+                </div>  
+                
+                <span class="d-flex trending-span">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 d-flex flex-column justify-content-center tranding-box1">
+            <img src="image/tranding-img6.png" alt="">
+
+            <div>
+              <div class="tranding-box-text d-flex flex-column gap-3">
+                <span class="d-flex align-items-center justify-content-between mt-3 trending-span">
+                  <a href=""><h5>$275000</h5></a>
+                  <i class="fa-solid fa-share-nodes"></i>
+                </span>
+
+                <h4>
+                  Luxury Apartment 
+                  in California
+                </h4>
+
+                <div class="dream-span d-flex gap-4">
+                  <span><i class="fa-solid fa-bed"></i>2</span>
+                  <span><i class="fa-solid fa-bath"></i>2</span>
+                  <span><i class="fa-solid fa-car"></i>1</span>
+                </div>  
+                
+                <span class="d-flex trending-span">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="our">
+        <div class="our-text text-center">
+          <h1>What our customers say’s</h1>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable <br> 
+            content of a page when looking at its layout.
+          </p>
+        </div>
+
+        <div class="row gap-5">
+          <div class="col-2">
+            <img src="image/our-img.png" alt="">
+          </div>
+
+          <div class="col-10 our-big-card d-flex flex-column gap-4">
+            <div class="d-flex flex-column our-card-text">
+              <div class="our-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+  
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              </p>
+  
+              <div class="row d-flex justify-content-between">
+                <span class="col-md-6 col-12">
+                  <h3>Kety Willions</h3>
+                  <p>California, United State</p>
+                </span>
+  
+                <div class="col-md-6 col-12">
+                  <img src="image/our-img1.png" alt="">
+                  <img src="image/our-img2.png" alt="">
+                  <img src="image/our-img3.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-3 col-md-6 col-12 footer-logo">
+            <img src="image/navbar-logo.png" alt="">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus
+              felis vitae sit est quisque.
+            </p>
+          </div><hr class="d-md-none d-flex">
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <ul class="footer-links d-flex flex-column gap-2">
+              <h5>Service</h5>
+              <li>Payment & Tax</li>
+              <li>Features</li>
+              <li>View Booking</li>
+              <li>Support</li>
+            </ul>
+          </div><hr class="d-md-none d-flex">
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <ul class="footer-links d-flex flex-column gap-2">
+              <h5>About</h5>
+              <li>About us</li>
+              <li>News</li>
+              <li>Pricing</li>
+              <li>New Property</li>
+            </ul>
+          </div><hr class="d-md-none d-flex">
+
+          <div class="col-lg-3 col-md-6 col-12 footer-i-link">
+            <h4>Our Location</h4>
+            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+
+            <div class="footer-i">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div><hr>
+
+        <div class="row text-center">
+          <div class="col-6 footer-bottom-text">
+            <hp>Copyright 2022 flora. All Rights Reserved</hp>
+          </div>
+
+          <div class="col-6 footer-bottom-text">
+            <span class="d-flex gap-4">
+              <p>Terms & Conditions</p>
+              <p>Privacy Policy</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</html> 
